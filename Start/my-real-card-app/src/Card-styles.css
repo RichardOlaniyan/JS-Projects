@@ -47,15 +47,25 @@ body{
  margin-bottom: 4px;
  margin-top: 4px;
 }
-.user-card-location{
- font-size: 12px;
- opacity: 0.6;
+.location-wrap{
+ display: inline-flex;
+ vertical-align: top;
  width: 120px;
+justify-content: center;
+}
+.user-card-location{
+ font-size: 14px;
+ opacity: 0.5;
  display: inline-block;
  margin: 0px;
  overflow: hidden;
  text-overflow: ellipsis;
  white-space: nowrap;
+}
+.user-location-icon{
+ width: 16px;
+ height: 16px;
+ margin-right: 2px;
 }
 .user-card-number{
  font-size: small;
