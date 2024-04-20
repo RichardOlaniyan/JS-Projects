@@ -1,0 +1,78 @@
+body{
+    color: white;
+    font-family: "IBM Plex Sans";
+}
+.user-card-wrap{
+ background-color: hsl(0, 0%, 21%);
+ display: inline-block;
+ margin: 20px;
+ padding: 25px 10px;
+ border-radius: 10px;
+ text-align: center;
+ position: relative;
+ width: 140px;
+ cursor: pointer;
+ transition: 0.15s transform ease;
+}
+.user-card-wrap:hover{
+ transform: scale(1.04);
+}
+.user-profile-status{
+ width: 8px;
+ height: 8px;
+ background-color: #4a4a4a;
+ border-radius: 10px;
+ position: absolute;
+ right: 12px;
+ top: 12px;
+}
+.user-profile-status-active{
+ background-color: #1AF042;;
+ box-shadow: 0 0 7px #1af242;
+}
+.user-profile-status-inactive{
+ background-color: #F0AA1A;
+}
+.user-profile-avatar{
+ border-radius: 100px;
+ display: block;
+ margin: 0 auto;
+ width: 70px;
+
+}
+.user-card-name {
+ font-weight: 600;
+ font-size: 16px;
+ text-transform: capitalize;
+ margin-bottom: 4px;
+ margin-top: 4px;
+}
+.user-card-location{
+ font-size: 12px;
+ opacity: 0.6;
+ width: 120px;
+ display: inline-block;
+ margin: 0px;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+}
+.user-card-number{
+ font-size: small;
+ font-weight: 300;
+ margin: 0px;
+
+}
+.user-profile-placeholder{
+ background-color: #333;
+ letter-spacing: 0;
+ height: 70px;
+ width: 70px;
+ margin: 0 auto;
+ border-radius: 100px;
+ color: #aaa;
+ font-weight: bold;
+ text-align: center;
+ line-height: 70px;
+}
+

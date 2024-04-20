@@ -1,5 +1,6 @@
+import PropTypes from 'prop-types'
 
-function Button(){
+function Button(props){
 
     const styles = {
             backgroundColor: "hsl(0, 0%, 43%)",
@@ -11,6 +12,16 @@ function Button(){
             border: "none",
             cursor: "pointer",
     }
-    return(<button style={styles}>Click Me</button>);
+    return(<button style={styles}>{props.name} {props.count}</button>);
 }
+
+Button.propTypes = {
+    name: PropTypes.string,
+    count: PropTypes.number,
+}
+
+Button.defaultProps = {
+    name: "Button Name"
+}
+
 export default Button
